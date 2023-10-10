@@ -1,0 +1,20 @@
+<div class="center">
+
+    <h1 mat-dialog-title>Add Admin</h1> 
+
+    <div mat-dialog-content> 
+      <form (submit)="saveData()">
+
+        <mat-form-field>
+          <input matInput placeholder="Who !?" [(ngModel)]="data.name" name="name">
+        </mat-form-field>
+      </form>
+      
+    </div>
+
+    <div class="center" mat-dialog-actions>
+      <button mat-button (click)="closeDialog()">Cancel</button>
+      <button mat-button (click)="saveData()">Save</button>
+    </div>
+
+</div>
